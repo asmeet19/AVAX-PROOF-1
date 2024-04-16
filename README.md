@@ -1,55 +1,49 @@
-# Avalanche-Subnets
+# AVAX-PROOF-1
+# EVM Subnet Deployment Guide
 
-## ERC20 Token and Vault Smart Contract
+Welcome to the EVM Subnet Deployment Guide for Avalanche using the Avalanche CLI. This guide will walk you through the process of deploying your own EVM (Ethereum Virtual Machine) subnet, adding it to Metamask, connecting Remix to your Metamask, deploying smart contracts, and testing your application.
 
-## Overview
+## Prerequisites
 
-This repository hosts two Solidity smart contracts: `ERC20.sol` and `vault.sol`. The `ERC20.sol` contract establishes a basic ERC-20 token, incorporating essential functions such as transfer, approve, mint, and burn. On the other hand, the `vault.sol` contract serves as a secure storage solution for the ERC-20 token, enabling users to deposit and withdraw tokens while managing the overall supply and individual balances.
+Before you begin, ensure you have the following:
 
-## Getting Started with Remix:
+- Avalanche CLI installed on your system
+- Metamask extension installed in your browser
+- Remix IDE (or any other preferred IDE for Solidity development)
+- Basic knowledge of Ethereum smart contract development
 
-### Prerequisites:
+## Deployment Steps
 
-1. Install Remix IDE on your web browser.
-2. Ensure compatibility with an Ethereum wallet (e.g., MetaMask) for interacting with contracts on the Ethereum blockchain.
+1. **Deploy Your EVM Subnet Using the Avalanche CLI**:
+   - Follow the instructions provided by Avalanche CLI to deploy your EVM subnet.
 
-### Steps:
+2. **Add Your Subnet to Metamask**:
+   - Open Metamask in your browser.
+   - Go to Networks > Custom RPC.
+   - Enter the details of your EVM subnet (RPC URL, Chain ID, Symbol, and Block Explorer URL).
 
-1. Open Remix IDE:
-   - Navigate your web browser to Remix IDE.
+3. **Select Your Subnet in Metamask**:
+   - Ensure that your newly added subnet is selected as the active network in Metamask.
 
-2. Import Contracts:
-   - Copy the contents of `ERC20.sol` and `vault.sol`.
-   - Within Remix, create new files named `ERC20.sol` and `vault.sol`.
-   - Paste the respective contents into each file.
+4. **Connect Remix to Your Metamask**:
+   - Open Remix IDE.
+   - Choose "Injected Web3" as the environment to connect Remix to Metamask.
 
-3. Compile Contracts:
-   - Within Remix, access the "Solidity" tab.
-   - Choose the appropriate version for the Solidity compiler (e.g., ^0.8.17).
-   - Click the "Compile" button to compile the contracts.
+5. **Deploy Smart Contracts**:
+   - Write your smart contracts in Remix or import existing ones.
+   - Compile and deploy your smart contracts to your EVM subnet using Remix.
 
-4. Deploy Token Contract:
-   - Switch to the "Deploy & Run Transactions" tab.
-   - Select `ERC20.sol` in the contract dropdown.
-   - Click the "Deploy" button to initiate the deployment of the ERC-20 token contract.
+6. **Test Your Application**:
+   - Using Remix, interact with your deployed smart contracts.
+   - Deploy tokens, pools, or any other components of your application.
+   - Perform thorough testing to ensure the functionality of your application on the EVM subnet.
 
-5. Copy Token Address:
-   - Upon deployment, copy the token contract address from the Remix console.
+## Additional Resources
 
-6. Deploy Vault Contract:
-   - Choose `vault.sol` in the contract dropdown.
-   - Paste the ERC-20 token contract address into the constructor parameter for Vault.
-   - Click the "Deploy" button to deploy the vault contract.
+- [Avalanche Documentation](https://docs.avax.network/)
+- [Metamask Documentation](https://docs.metamask.io/)
+- [Remix Documentation](https://docs.remix.ethereum.org/)
 
-### Interact with Contracts:
+For any further assistance or troubleshooting, refer to the documentation of the respective tools or seek help from the community forums.
 
-Once deployed, interact with the contracts through the provided functions:
-- Connect your EVM Subnet to Remix for transaction execution.
-
-## Authors
-
-- pras777
-
-## License:
-
-This project is licensed under the MIT License. Refer to the LICENSE file for details.
+Happy deploying and developing on the Avalanche EVM Subnet! 🚀
